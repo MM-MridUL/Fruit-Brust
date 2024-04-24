@@ -26,11 +26,42 @@
           }
         }
       </script>
+      <!-- google font Lato -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        .lato-font{
+            font-family: "Lato", sans-serif;
+        }
+        .banner1{
+            background: url('images/banner1.png');
+            background-size: cover;
+            width: 100%;
+        }
+        .banner2{
+            background: url('images/banner2.png');
+            background-size: cover;
+            width: 100%;
+        }
+        .banner3{
+            background: url('images/banner3.png');
+            background-size: cover;
+            width: 100%;
+        }
+        .banner4{
+            background: url('images/banner4.png');
+            background-size: cover;
+            width: 100%;
+        }
+    </style>
+
   </head>
-  <body>
-    <header class="container mx-auto">
+  <body class="lato-font">
+    <header class="container mx-auto lg:mb-36">
        <!-- Navbar -->
-       <nav class="w-full mx-auto">
+       <nav class="w-full mx-auto my-12">
         <div class="navbar bg-btn-color rounded-full">
             <div class="hidden lg:inline flex-1">
                 <div class=" ml-6 text-white gap-4 flex">
@@ -66,9 +97,98 @@
                   </div>
                 </div>
               </div>
-            <!-- menu -->
           </div>
        </nav>
+       <!-- Banner section -->
+       <section class="relative mb-24">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+             <div class="banner1  h-[620px]">
+                <div class="text-center space-y-9 pt-12 pb-24 bg-black bg-opacity-30 h-full">
+                    <h2 class="text-7xl text-white font-extrabold text-center">Exotic tastes at your <br> doorstep</h2>
+                <p class="text-2xl text-white font-medium text-center">We supply highly quality organic products</p>
+                <button class="btn bg-btn-color text-2xl text-white font-extrabold mx-auto border-none">Shop Now</button>
+                </div>
+
+             </div>
+            
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="banner2  h-[620px]">
+                    <div class="text-center space-y-9 pt-12 pb-24 bg-black bg-opacity-30 h-full">
+                        <h2 class="text-7xl text-white font-extrabold text-center">Exotic tastes at your <br> doorstep</h2>
+                    <p class="text-2xl text-white font-medium text-center">We supply highly quality organic products</p>
+                    <button class="btn bg-btn-color text-2xl text-white font-extrabold mx-auto border-none">Shop Now</button>
+                    </div>
+    
+                 </div>
+
+
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="banner3  h-[620px]">
+                    <div class="text-center space-y-9 pt-12 pb-24 bg-black bg-opacity-30 h-full">
+                        <h2 class="text-7xl text-white font-extrabold text-center">Exotic tastes at your <br> doorstep</h2>
+                    <p class="text-2xl text-white font-medium text-center">We supply highly quality organic products</p>
+                    <button class="btn bg-btn-color text-2xl text-white font-extrabold mx-auto border-none">Shop Now</button>
+                    </div>
+    
+                 </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="banner4  h-[620px]">
+                    <div class="text-center space-y-9 pt-12 pb-24 bg-black bg-opacity-30 h-full">
+                        <h2 class="text-7xl text-white font-extrabold text-center">Exotic tastes at your <br> doorstep</h2>
+                    <p class="text-2xl text-white font-medium text-center">We supply highly quality organic products</p>
+                    <button class="btn bg-btn-color text-2xl text-white font-extrabold mx-auto border-none">Shop Now</button>
+                    </div>
+    
+                 </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+         <div class="w-7xl hidden lg:inline">
+            <div class="grid grid-cols-5 gap-4 shadow-lg bg-white px-9 py-4 w-10/12 absolute -bottom-24 left-32">
+                <div class="text-center ">
+                    <img class="mx-auto" src="images/fruit1.png" alt="">
+                    <p class="text-2xl font-medium">Strawberry</p>
+                </div>
+                <div class="text-center ">
+                    <img class=" mx-auto" src="images/fruit2.png" alt="">
+                    <p class="text-2xl font-medium">Orange</p>
+                </div>
+                <div class="text-center ">
+                    <img class="mx-auto" src="images/fruit3.png" alt="">
+                    <p class="text-2xl font-medium">Mango</p>
+                </div>
+                <div class="text-center ">
+                    <img class="mx-auto" src="images/fruit4.png" alt="">
+                    <p class="text-2xl font-medium">Strawberry</p>
+                </div>
+                <div class="text-center ">
+                    <img class="mx-auto" src="images/fruit5.png" alt="">
+                    <p class="text-2xl font-medium">Mango</p>
+                </div>
+    
+             </div>
+         </div>
+       </section>
 
     </header>
     <main>
