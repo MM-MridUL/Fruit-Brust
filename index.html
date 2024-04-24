@@ -20,6 +20,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-color': '#F85559',
               }
             }
           }
@@ -27,8 +28,47 @@
       </script>
   </head>
   <body>
-    <header>
-        <h2 class="text-2xl">hello Bangladesh</h2>
+    <header class="container mx-auto">
+       <!-- Navbar -->
+       <nav class="w-full mx-auto">
+        <div class="navbar bg-btn-color rounded-full">
+            <div class="hidden lg:inline flex-1">
+                <div class=" ml-6 text-white gap-4 flex">
+                    <ul><li><a href="">Home</a></li></ul>
+                    <ul><li><a href="">About Us</a></li></ul>
+                    <ul><li><a href="">Shop</a></li></ul>
+                    <ul><li><a href="">All Fruits</a></li></ul>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost text-xl text-white">Fruit Burst</a>
+            </div>
+            
+                    <div class="hidden md:inline">
+                        <label class=" input input-bordered flex items-center gap-2 mr-6 rounded-full">
+                            <input type="text" class="grow" placeholder="Search here" />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </label>
+                    </div>
+
+              <div class="md:hidden">
+                <div class="dropdown mx-auto">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <button><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            <!-- menu -->
+          </div>
+       </nav>
 
     </header>
     <main>
